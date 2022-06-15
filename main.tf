@@ -1,9 +1,9 @@
  terraform {
     required_providers {
-      ansible = {
-        source = "habakke/ansible"
-        version = "1.0.9"
-      }
+     ansible = {
+      source = "nbering/ansible"
+      version = "1.0.4"
+    }
        alicloud = {
         source = "aliyun/alicloud"
         version = "1.99.0"
