@@ -12,6 +12,8 @@
   }
  provider "alicloud" {
 }
+ provider "ansible" {
+}
 resource "ansible_host" "node1" {
   count = 1
 
