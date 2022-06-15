@@ -1,8 +1,8 @@
  terraform {
     required_providers {
       ansible = {
-        source = "registry.cloudiac.org/Brian/ansible"
-        version = "1.0.4"
+        source = "habakke/ansible"
+        version = "1.0.9"
       }
        alicloud = {
         source = "aliyun/alicloud"
