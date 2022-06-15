@@ -12,9 +12,15 @@
   }
  provider "alicloud" {
 }
-  provider "ansible" {
-    # Configuration options
+provider "ansible" {
+  path            = "/data/ansible/inventory"
+  log_enable      = false
+  log_file        = "terraform-provider-ansible.log"
+  log_levels      = {
+    _default = "debug"
+    _capturelog = ""
   }
+}
 resource "ansible_host" "node1" {
   count = 1
 
