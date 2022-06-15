@@ -4,9 +4,14 @@
         source = "registry.cloudiac.org/Brian/ansible"
         version = "1.0.4"
       }
+       alicloud = {
+        source = "aliyun/alicloud"
+        version = "1.99.0"
+      }
     }
   }
-
+ provider "alicloud" {
+}
   provider "ansible" {
     # Configuration options
   }
